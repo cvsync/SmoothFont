@@ -1,0 +1,7 @@
+{
+  "pack": {
+    "min_format": [ XXXMINPACKFORMATXXX, XXXMINPACKFORMATMINORXXX ],
+    "max_format": [ XXXMAXPACKFORMATXXX, XXXMAXPACKFORMATMINORXXX ],
+    "description": "M+ PLUS (Designed by Coji Morishita) vXXXMAJORXXX.XXXMINORXXX.XXXREVXXX"
+  }
+}
