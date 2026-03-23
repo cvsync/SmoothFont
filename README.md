@@ -6,7 +6,20 @@ The Minecraft resource pack ``Smooth Font'' , which replace with a smooth font.
 
 1.0.1
 
-## Smooth Fonts
+## For Java Edition (1.21.9/1.21.10/1.21.11 or later) users
+
+```
+% git clone https://github.com/cvsync/SmoothFont
+
+% cd SmoothFont
+
+% /bin/sh build.sh
+
+% ls 1.0.1/
+SmoothFont-bizud.zip    SmoothFont-mplus.zip    SmoothFont-plexsans.zip
+```
+
+## Smooth Fonts Images
 
 ### モリサワ BIZ UD ゴシック (Morisawa BIZ UD Gothic)
 
@@ -31,16 +44,3 @@ https://github.com/IBM/plex/
 IBM Plex Sans JP
 
 ![IBM Plex Sans JP](./images/Minecraft-PlexSansJP.png "IBM Plex Sans JP")
-
-## For Java Edition (1.21.9/1.21.10/1.21.11 or later) users
-
-```
-% git clone https://github.com/cvsync/SmoothFont
-
-% cd SmoothFont
-
-% /bin/sh build.sh
-
-% ls 1.0.1/
-SmoothFont-bizud.zip    SmoothFont-mplus.zip    SmoothFont-plexsans.zip
-```
