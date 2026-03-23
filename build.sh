@@ -2,7 +2,7 @@
 
 VER_MAJOR=1
 VER_MINOR=0
-VER_REV=0
+VER_REV=1
 
 MAX_PACK_FORMAT=84
 MAX_PACK_FORMAT_MINOR=0
@@ -76,8 +76,9 @@ font_pack() {
 # for Java Edition
 #
 sudo rm -f *.zip
-font_pack mplus https://github.com/coz-m/MPLUS_FONTS/raw/refs/heads/master/fonts/ttf/Mplus1-Medium.ttf
 font_pack bizud https://github.com/googlefonts/morisawa-biz-ud-gothic/raw/refs/heads/main/fonts/ttf/BIZUDPGothic-Regular.ttf
+font_pack mplus https://github.com/coz-m/MPLUS_FONTS/raw/refs/heads/master/fonts/ttf/Mplus1-Medium.ttf
+font_pack plexsans https://github.com/IBM/plex/raw/refs/heads/master/packages/plex-sans-jp/fonts/complete/ttf/hinted/IBMPlexSansJP-Medium.ttf
 
 mkdir -p ${VER_MAJOR}.${VER_MINOR}.${VER_REV}
 cp ./*.zip ${VER_MAJOR}.${VER_MINOR}.${VER_REV}/

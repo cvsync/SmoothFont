@@ -2,6 +2,6 @@
   "pack": {
     "min_format": [ XXXMINPACKFORMATXXX, XXXMINPACKFORMATMINORXXX ],
     "max_format": [ XXXMAXPACKFORMATXXX, XXXMAXPACKFORMATMINORXXX ],
-    "description": "M PLUS 1 Medium (Designed by Coji Morishita) vXXXMAJORXXX.XXXMINORXXX.XXXREVXXX"
+    "description": "Plex Sans JP Medium 500 (Designed by IBM) vXXXMAJORXXX.XXXMINORXXX.XXXREVXXX"
   }
 }
