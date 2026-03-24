@@ -4,7 +4,7 @@ The Minecraft resource pack ``Smooth Font'' , which replace with a smooth font.
 
 ## Latest Version
 
-1.0.2
+1.0.3
 
 ## For Java Edition (1.21.9/1.21.10/1.21.11 or later) users
 
@@ -15,8 +15,8 @@ The Minecraft resource pack ``Smooth Font'' , which replace with a smooth font.
 
 % /bin/sh build.sh
 
-% ls 1.0.2/
-SmoothFont-bizud.zip    SmoothFont-mplus.zip    SmoothFont-plexsans.zip
+% ls 1.0.3/
+SmoothFont-bizud.zip    SmoothFont-kosugi.zip   SmoothFont-mplus.zip    SmoothFont-plexsans.zip
 ```
 
 ## Smooth Fonts Images
@@ -27,7 +27,17 @@ SIL Open Font License 1.1
 
 [モリサワ BIZ UD P ゴシック Regular (Morisawa BIZ UD P Gothic Regular)](https://github.com/googlefonts/morisawa-biz-ud-gothic/)
 
-![Morisawa BIZ UD P Gothic Minecraft Image](./images/Minecraft-BIZUDPGothic.png "Morisawa BIZ UD P Gothic Minecraft Image")
+![Morisawa BIZ UD P Gothic Minecraft English Image](./images/Minecraft-BIZUDPGothic-en.png "Morisawa BIZ UD P Gothic Minecraft English Image")
+![Morisawa BIZ UD P Gothic Minecraft Japanese Image](./images/Minecraft-BIZUDPGothic-jp.png "Morisawa BIZ UD P Gothic Minecraft Japanese Image")
+
+### 小杉丸 (Kosugi Maru)
+
+Apache License 2.0
+
+[小杉丸 (MOTOYA Kosugi Maru)](https://github.com/googlefonts/kosugi-maru)
+
+![MOTOYA Kosugi Maru Minecraft English Image](./images/Minecraft-KosugiMaru-en.png "MOTOYA Kosugi Maru Minecraft English Image")
+![MOTOYA Kosugi Maru Minecraft Japanese Image](./images/Minecraft-KosugiMaru-jp.png "MOTOYA Kosugi Maru Minecraft Japanese Image")
 
 ### M+ FONTS
 
@@ -35,7 +45,8 @@ SIL Open Font License 1.1
 
 [M PLUS 1 Medium](https://mplusfonts.github.io/)
 
-![M PLUS 1 Medium Minecraft Image](./images/Minecraft-MPLUS.png "M PLUS 1 Medium Minecraft Image")
+![M PLUS 1 Medium Minecraft English Image](./images/Minecraft-MPLUS1-en.png "M PLUS 1 Medium Minecraft English Image")
+![M PLUS 1 Medium Minecraft Japanese Image](./images/Minecraft-MPLUS1-jp.png "M PLUS 1 Medium Minecraft Japanese Image")
 
 ### IBM Plex&reg; typeface
 
@@ -43,4 +54,5 @@ SIL Open Font License 1.1
 
 [IBM Plex Sans JP](https://github.com/IBM/plex/)
 
-![IBM Plex Sans JP Minecraft Image](./images/Minecraft-PlexSansJP.png "IBM Plex Sans JP Minecraft Image")
+![IBM Plex Sans JP Minecraft English Image](./images/Minecraft-PlexSansJP-en.png "IBM Plex Sans JP Minecraft English Image")
+![IBM Plex Sans JP Minecraft Japanese Image](./images/Minecraft-PlexSansJP-jp.png "IBM Plex Sans JP Minecraft Japanese Image")
