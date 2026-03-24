@@ -27,7 +27,7 @@ Try version 1.0.4, as these files are stored in the `1.0.4` directory.
 
 % /bin/sh build.sh
 
-% ls 1.0.4/
+% ls 1.1.0/
 SmoothFont-bizud.zip    SmoothFont-kosugi.zip   SmoothFont-mplus.zip    SmoothFont-plexsans.zip
 ```
 
