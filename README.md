@@ -6,7 +6,7 @@ This resource pack makes text easier to read, especially in Japanese.
 
 ## Latest Version
 
-1.0.3
+1.0.4
 
 ## For Java Edition (1.21.9/1.21.10/1.21.11 or later) users
 
@@ -23,7 +23,7 @@ This resource pack makes text easier to read, especially in Japanese.
 
 % /bin/sh build.sh
 
-% ls 1.0.3/
+% ls 1.0.4/
 SmoothFont-bizud.zip    SmoothFont-kosugi.zip   SmoothFont-mplus.zip    SmoothFont-plexsans.zip
 ```
 

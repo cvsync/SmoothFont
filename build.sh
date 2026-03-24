@@ -2,7 +2,7 @@
 
 VER_MAJOR=1
 VER_MINOR=0
-VER_REV=3
+VER_REV=4
 
 MAX_PACK_FORMAT=84
 MAX_PACK_FORMAT_MINOR=0
@@ -34,7 +34,7 @@ font_pack() {
 
 	# Download font file and license
 	curl -L ${FONT_URL} -o ${FONT_DSTDIR}/fonts/${FONT_FILE}
-	curl -L ${FONT_LICENSE_URL} -o ${TMPDIR}/${FONT_LICENSE_FILE}
+	curl -L ${FONT_LICENSE_URL} -o ${FONT_DSTDIR}/fonts/${FONT_LICENSE_FILE}
 
 	#
 	# pack.mcdata
