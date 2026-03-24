@@ -1,6 +1,6 @@
 # Minecraft Smooth Font
 
-The Minecraft resource pack "Smooth Font" replaces the text with a smooth font.
+The Minecraft resource pack, ``Smooth Font,'' replaces the text with a smooth font.
 
 This resource pack makes text easier to read, especially in Japanese.
 
