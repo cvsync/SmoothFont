@@ -10,7 +10,7 @@ This resource pack makes text easier to read, especially in Japanese.
 
 ## For Java Edition (1.21.9/1.21.10/1.21.11 or later) users
 
-1.) Download `SmoothFont-<foo>.zip`
+1.) Download `SmoothFont-<FontAbbr>.zip`
 
 2.) Put it into `C:\Users\<Username>\AppData\Roaming.minecraft\resourcepacks`
 
