@@ -2,7 +2,7 @@
 
 VER_MAJOR=1
 VER_MINOR=0
-VER_REV=1
+VER_REV=2
 
 MAX_PACK_FORMAT=84
 MAX_PACK_FORMAT_MINOR=0
@@ -16,11 +16,14 @@ TMPDIR=./tmp
 FONT_DSTDIR=${TMPDIR}/assets/minecraft/font
 
 font_pack() {
-	FONTNAME="$1"
-	FONTFILE_URL="$2"
-	FONTFILE=$(echo ${FONTFILE_URL##*/} | tr [A-Z] [a-z] | sed 's/-//g')
+	FONT_NAME="$1"
+	FONT_URL="$2"
+	FONT_LICENSE_URL="$3"
 
-	RESOURCE_PACK_FILE_JAVA="${RESOURCE_PACK_NAME}-${FONTNAME}".zip
+	FONT_FILE=$(echo ${FONT_URL##*/} | tr [A-Z] [a-z])
+	FONT_LICENSE_FILE=${FONT_LICENSE_URL##*/}
+
+	RESOURCE_PACK_FILE_JAVA="${RESOURCE_PACK_NAME}-${FONT_NAME}".zip
 
 	#
 	# init
@@ -29,14 +32,15 @@ font_pack() {
 	mkdir -p ${TMPDIR} ${TMPDIR}/assets ${TMPDIR}/assets/minecraft
 	mkdir -p ${TMPDIR}/assets/minecraft/font ${TMPDIR}/assets/minecraft/font/fonts
 
-	# Download font file
-	curl -L ${FONTFILE_URL} -o ${FONT_DSTDIR}/fonts/${FONTFILE}
+	# Download font file and license
+	curl -L ${FONT_URL} -o ${FONT_DSTDIR}/fonts/${FONT_FILE}
+	curl -L ${FONT_LICENSE_URL} -o ${TMPDIR}/${FONT_LICENSE_FILE}
 
 	#
 	# pack.mcdata
 	#
 	_file=pack.mcmeta
-	cat "${RESOURCE_PACK_NAME}/${_file}.${FONTNAME}" | \
+	cat "${RESOURCE_PACK_NAME}/${_file}.${FONT_NAME}" | \
 	sed "s/XXXMAXPACKFORMATXXX/${MAX_PACK_FORMAT}/g" | \
 	sed "s/XXXMAXPACKFORMATMINORXXX/${MAX_PACK_FORMAT_MINOR}/g" | \
 	sed "s/XXXMINPACKFORMATXXX/${MIN_PACK_FORMAT}/g" | \
@@ -52,7 +56,7 @@ font_pack() {
 	for _file in default.json uniform.json
 	do
 		cat ${RESOURCE_PACK_NAME}/assets/minecraft/font/${_file} | \
-		sed "s/XXXFONTFILEXXX/${FONTFILE}/g" | \
+		sed "s/XXXFONTFILEXXX/${FONT_FILE}/g" | \
 		sed "s///g" > ${FONT_DSTDIR}/${_file}
 	done
 
@@ -76,9 +80,9 @@ font_pack() {
 # for Java Edition
 #
 sudo rm -f *.zip
-font_pack bizud https://github.com/googlefonts/morisawa-biz-ud-gothic/raw/refs/heads/main/fonts/ttf/BIZUDPGothic-Regular.ttf
-font_pack mplus https://github.com/coz-m/MPLUS_FONTS/raw/refs/heads/master/fonts/ttf/Mplus1-Medium.ttf
-font_pack plexsans https://github.com/IBM/plex/raw/refs/heads/master/packages/plex-sans-jp/fonts/complete/ttf/hinted/IBMPlexSansJP-Medium.ttf
+font_pack bizud https://github.com/googlefonts/morisawa-biz-ud-gothic/raw/refs/heads/main/fonts/ttf/BIZUDPGothic-Regular.ttf https://github.com/googlefonts/morisawa-biz-ud-gothic/raw/refs/heads/main/OFL.txt
+font_pack mplus https://github.com/coz-m/MPLUS_FONTS/raw/refs/heads/master/fonts/ttf/Mplus1-Medium.ttf https://github.com/coz-m/MPLUS_FONTS/raw/refs/heads/master/OFL.txt
+font_pack plexsans https://github.com/IBM/plex/raw/refs/heads/master/packages/plex-sans-jp/fonts/complete/ttf/hinted/IBMPlexSansJP-Medium.ttf https://github.com/IBM/plex/raw/refs/heads/master/LICENSE.txt
 
 mkdir -p ${VER_MAJOR}.${VER_MINOR}.${VER_REV}
 cp ./*.zip ${VER_MAJOR}.${VER_MINOR}.${VER_REV}/
