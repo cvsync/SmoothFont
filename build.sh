@@ -68,7 +68,7 @@ font_pack() {
 	#
 	# zip-fy
 	#
-	(cd ${TMPDIR}/ && zip -r ../${RESOURCE_PACK_FILE_JAVA} . -i "*")
+	(cd ${TMPDIR}/ && zip -r ../${VER_MAJOR}.${VER_MINOR}.${VER_REV}/${RESOURCE_PACK_FILE_JAVA} . -i "*")
 
 	#
 	# Clean up
@@ -79,12 +79,12 @@ font_pack() {
 #
 # for Java Edition
 #
-sudo rm -f *.zip
+rm -f -r ${VER_MAJOR}.${VER_MINOR}.${VER_REV}
+mkdir -p ${VER_MAJOR}.${VER_MINOR}.${VER_REV}
+
 font_pack bizud https://github.com/googlefonts/morisawa-biz-ud-gothic/raw/refs/heads/main/fonts/ttf/BIZUDPGothic-Regular.ttf https://github.com/googlefonts/morisawa-biz-ud-gothic/raw/refs/heads/main/OFL.txt
 font_pack kosugi https://github.com/googlefonts/kosugi-maru/raw/refs/heads/main/fonts/ttf/KosugiMaru-Regular.ttf https://github.com/googlefonts/kosugi-maru/raw/refs/heads/main/LICENSE.txt
 font_pack mplus https://github.com/coz-m/MPLUS_FONTS/raw/refs/heads/master/fonts/ttf/Mplus1-Medium.ttf https://github.com/coz-m/MPLUS_FONTS/raw/refs/heads/master/OFL.txt
 font_pack plexsans https://github.com/IBM/plex/raw/refs/heads/master/packages/plex-sans-jp/fonts/complete/ttf/hinted/IBMPlexSansJP-Medium.ttf https://github.com/IBM/plex/raw/refs/heads/master/LICENSE.txt
 
-mkdir -p ${VER_MAJOR}.${VER_MINOR}.${VER_REV}
-cp ./*.zip ${VER_MAJOR}.${VER_MINOR}.${VER_REV}/
 ls -l ${VER_MAJOR}.${VER_MINOR}.${VER_REV}/
