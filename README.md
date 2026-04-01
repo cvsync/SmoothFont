@@ -8,7 +8,7 @@ This resource pack makes text easier to read, especially in Japanese.
 
 1.1.0
 
-## For Java Edition (26.1 or later) users
+## For Java Edition (26.1/26.1.1 or later) users
 
 1.) Download the resource pack from the `1.1.0` directory.
 
