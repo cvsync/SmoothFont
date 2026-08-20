@@ -1,5 +1,12 @@
 #! /bin/sh
 
+#
+# Minecraft Smooth Font
+#
+# The Minecraft resource pack, ``Smooth Font,'' replaces the text with a smooth font.
+# https://github.com/cvsync/SmoothFont
+#
+
 VER_MAJOR=1
 VER_MINOR=1
 VER_REV=1
