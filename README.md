@@ -4,6 +4,10 @@ The Minecraft resource pack, ``Smooth Font,'' replaces the text with a smooth fo
 
 This resource pack makes text easier to read, especially in Japanese.
 
+より見やすいフォントに置き換えるマインクラフトのリソースパックです。
+
+特に、日本語の見やすさを改善します。
+
 ## Latest Version
 
 1.1.1
