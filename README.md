@@ -1,6 +1,6 @@
 # Minecraft Smooth Font
 
-The Minecraft resource pack, ``Smooth Font,'' replaces the text with a smooth font.
+A Minecraft resource pack that replaces the default font with a smoother font.
 
 This resource pack makes text easier to read, especially in Japanese.
 
@@ -8,21 +8,27 @@ This resource pack makes text easier to read, especially in Japanese.
 
 特に、日本語の見やすさを改善します。
 
-## Latest Version
+## Latest Release
 
 1.1.1
 
-## For Java Edition (26.1/26.1.1/26.1.2/26.2 or later)
+## Java Edition
 
-1.) Download the resource pack from the `1.1.1` directory.
+### Minecraft 26.1 / 26.1.1 / 26.1.2 / 26.2 or later
 
-2.) Place it in `C:\Users\<Username>\AppData\Roaming.minecraft\resourcepacks`
+1. Download the resource pack from the `1.1.1` directory.
 
-## For Java Edition (1.21.9/1.21.10/1.21.11)
+2. Place the downloaded file in your Minecraft `resourcepacks` folder.
 
-Try version 1.0.4, as these files are stored in the `1.0.4` directory.
+On Windows, the default location is:
 
-### How to Create a Resource Pack
+`C:\Users\<Username>\AppData\Roaming\.minecraft\resourcepacks`
+
+### Minecraft 1.21.9 / 1.21.10 / 1.21.11
+
+Use version 1.0.4 instead. The corresponding files are available in the `1.0.4` directory.
+
+### How to Build the Resource Pack
 
 ```shell
 % git clone https://github.com/cvsync/SmoothFont
@@ -31,11 +37,11 @@ Try version 1.0.4, as these files are stored in the `1.0.4` directory.
 
 % /bin/sh build.sh
 
-% ls 1.1.0/
+% ls 1.1.1/
 SmoothFont-bizud.zip    SmoothFont-kosugi.zip   SmoothFont-mplus.zip    SmoothFont-plexsans.zip
 ```
 
-## Smooth Fonts Images
+## Fonts Images
 
 ### モリサワ BIZ UD ゴシック (Morisawa BIZ UD Gothic)
 
@@ -64,7 +70,7 @@ SIL Open Font License 1.1
 ![M PLUS 1 Medium Minecraft English Image](./images/Minecraft-MPLUS1-en.png "M PLUS 1 Medium Minecraft English Image")
 ![M PLUS 1 Medium Minecraft Japanese Image](./images/Minecraft-MPLUS1-jp.png "M PLUS 1 Medium Minecraft Japanese Image")
 
-### IBM Plex&reg; typeface
+### IBM Plex Sans JP
 
 SIL Open Font License 1.1
 
