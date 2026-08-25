@@ -3,7 +3,7 @@
 #
 # Minecraft Smooth Font
 #
-# The Minecraft resource pack, ``Smooth Font,'' replaces the text with a smooth font.
+# A Minecraft resource pack that replaces the default font with a smoother font.
 # https://github.com/cvsync/SmoothFont
 #
 
