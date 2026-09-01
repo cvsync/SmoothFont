@@ -28,19 +28,6 @@ On Windows, the default location is:
 
 Use version 1.0.4 instead. The corresponding files are available in the `1.0.4` directory.
 
-### How to Build the Resource Pack
-
-```shell
-% git clone https://github.com/cvsync/SmoothFont
-
-% cd SmoothFont
-
-% /bin/sh build.sh
-
-% ls 1.1.2/
-SmoothFont-bizud.zip    SmoothFont-kosugi.zip   SmoothFont-mplus.zip    SmoothFont-plexsans.zip
-```
-
 ## Fonts Images
 
 ### モリサワ BIZ UD ゴシック (Morisawa BIZ UD Gothic)
