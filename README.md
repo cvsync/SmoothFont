@@ -10,13 +10,13 @@ This resource pack makes text easier to read, especially in Japanese.
 
 ## Latest Release
 
-1.1.1
+1.1.2
 
 ## Java Edition
 
 ### Minecraft 26.1 / 26.1.1 / 26.1.2 / 26.2 or later
 
-1. Download the resource pack from the `1.1.1` directory.
+1. Download the resource pack from the `1.1.2` directory.
 
 2. Place the downloaded file in your Minecraft `resourcepacks` folder.
 
@@ -37,7 +37,7 @@ Use version 1.0.4 instead. The corresponding files are available in the `1.0.4` 
 
 % /bin/sh build.sh
 
-% ls 1.1.1/
+% ls 1.1.2/
 SmoothFont-bizud.zip    SmoothFont-kosugi.zip   SmoothFont-mplus.zip    SmoothFont-plexsans.zip
 ```
 

@@ -9,7 +9,7 @@
 
 VER_MAJOR=1
 VER_MINOR=1
-VER_REV=1
+VER_REV=2
 
 MAX_PACK_FORMAT=97
 MAX_PACK_FORMAT_MINOR=0
@@ -39,9 +39,17 @@ font_pack() {
 	mkdir -p ${TMPDIR} ${TMPDIR}/assets ${TMPDIR}/assets/minecraft
 	mkdir -p ${TMPDIR}/assets/minecraft/font ${TMPDIR}/assets/minecraft/font/fonts
 
+	#
 	# Download font file and license
+	#
 	curl -L ${FONT_URL} -o ${FONT_DSTDIR}/fonts/${FONT_FILE}
 	curl -L ${FONT_LICENSE_URL} -o ${FONT_DSTDIR}/fonts/${FONT_LICENSE_FILE}
+
+	#
+	# pack.png
+	#
+	_file=pack.png
+	cp "${RESOURCE_PACK_NAME}/${_file}" "${TMPDIR}"
 
 	#
 	# pack.mcdata
