@@ -1,3 +1,5 @@
+<kbd><img src="./images/pack.png" alt="resource pack icon" style="background-color: black; padding: 2px;"></img></kbd>
+
 # Minecraft Smooth Font
 
 A Minecraft resource pack that replaces the default font with a smoother font.
