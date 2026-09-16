@@ -12,13 +12,13 @@ This resource pack makes text easier to read, especially in Japanese.
 
 ## Latest Release
 
-1.1.2
+1.1.3
 
 ## Java Edition
 
-### Minecraft 26.1 / 26.1.1 / 26.1.2 / 26.2 or later
+### Minecraft 26.1 / 26.1.1 / 26.1.2 / 26.2 / 26.3 or later
 
-1. Download the resource pack from the `1.1.2` directory.
+1. Download the resource pack from the `1.1.3` directory.
 
 2. Place the downloaded file in your Minecraft `resourcepacks` folder.
 
