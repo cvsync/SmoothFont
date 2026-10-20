@@ -49,7 +49,7 @@ font_pack() {
 	# pack.png
 	#
 	_file=pack.png
-	cp "${RESOURCE_PACK_NAME}/${_file}" "${TMPDIR}"
+	cp "${RESOURCE_PACK_NAME}/${_file}" "${TMPDIR}/${_file}"
 
 	#
 	# pack.mcdata
